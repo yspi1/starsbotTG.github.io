@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-приложение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мини-приложение</h1>
+        <button class="button" onclick="openSection('profile')">👤 Профиль</button>
+        <button class="button" onclick="openSection('play')">🎮 Играть</button>
+        <button class="button" onclick="openSection('deposit')">💳 Пополнение</button>
+        <button class="button" onclick="openSection('withdraw')">💸 Вывод</button>
+        <button class="button" onclick="openSection('support')">🆘 Поддержка</button>
+    </div>
+
+    <script>
+        function openSection(section) {
+            alert(`Вы выбрали раздел: ${section}`);
+            // Здесь можно добавить логику для каждого раздела
+        }
+    </script>
+</body>
+</html>
